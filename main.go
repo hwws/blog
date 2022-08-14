@@ -1,15 +1,7 @@
 package main
 
-import (
-	"blog/dao"
-	"blog/model"
-)
+import "blog/router"
 
 func main() {
-	user := model.User{
-		Username: "hwws",
-		Password: "123456",
-	}
-
-	dao.Mgr.AddUser(&user)
+	router.Start()
 }
